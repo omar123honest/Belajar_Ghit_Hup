@@ -1,1 +1,20 @@
 this is a test page TO DO : content 
+Perintah	Fungsi
+git config --global user.name/user.email	Mengatur identitas penulis commit
+git init	Membuat repository Git baru di folder saat ini
+git clone <url>	Menduplikasi repository dari remote ke lokal
+git status	Melihat status file: berubah, staged, atau untracked
+git diff	Melihat detail baris kode yang berubah
+git add <file>	Memasukkan perubahan ke staging area
+git commit -m "pesan"	Menyimpan staging area sebagai snapshot riwayat baru
+git log	Menampilkan riwayat commit
+git branch	Mengelola (lihat/buat/hapus) branch
+git checkout / git switch	Berpindah antar branch
+git merge <branch>	Menggabungkan branch lain ke branch aktif
+git remote -v / git remote add	Melihat atau menghubungkan repository remote
+git push	Mengirim commit lokal ke repository remote
+git fetch / git pull	Mengambil (dan menggabungkan) perubahan dari remote
+git rebase <branch>	Menyusun ulang commit di atas branch lain (riwayat linear)
+git reset / git revert	Membatalkan perubahan (menghapus vs. mencatat pembalikan)
+git stash	Menyimpan perubahan sementara tanpa commit
+git tag	Menandai commit tertentu sebagai versi rilis
