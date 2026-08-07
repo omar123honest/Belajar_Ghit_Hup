@@ -1,0 +1,11 @@
+Alur Kerja Git yang Umum Dipakai Tim
+Gambaran singkat bagaimana seluruh perintah di atas biasanya dipakai secara berurutan dalam pekerjaan sehari-hari:
+1.	git clone repository dari GitHub/GitLab ke komputer lokal.
+2.	git switch -c nama-fitur — buat branch baru khusus untuk fitur atau perbaikan yang akan dikerjakan.
+3.	Tulis kode, lalu cek dengan git status dan git diff.
+4.	git add dan git commit setiap potongan pekerjaan yang sudah selesai, dengan pesan yang jelas.
+5.	git pull dari branch utama secara berkala, untuk menyamakan kode dan mengurangi risiko merge conflict besar di akhir.
+6.	git push branch fitur ke remote, lalu buka Pull Request / Merge Request di GitHub atau GitLab.
+7.	Tunggu Code Review dari rekan tim; status PR biasanya WIP → TBR → LGTM.
+8.	Jika ada konflik yang ditemukan saat merge, selesaikan sesuai langkah pada bagian Merge Conflict di atas.
+9.	Setelah disetujui, PR/MR di-merge ke branch utama, lalu proses CI/CD otomatis menjalankan test dan (jika lolos) men-deploy ke server.
