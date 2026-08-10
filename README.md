@@ -55,19 +55,3 @@ Repo ini berisi file-file latihan seputar praktik Git & GitHub (branch, commit, 
 | `Belajar-Githup-bersama-kink-liktop/` | Folder tambahan terkait materi belajar |
 
 ---
-
-## 🎯 Untuk Siapa
-
-- Pemula yang baru belajar Git & GitHub
-- Peserta bootcamp / pelatihan
-- Siapa pun yang butuh catatan cepat soal alur kerja Git tim
-
-## 🤝 Kontribusi
-
-1. Fork repository ini.
-2. Buat branch baru untuk latihan/perubahan kamu.
-3. Ajukan Pull Request dengan deskripsi singkat.
-
-## 📄 Lisensi
-
-Materi ini bebas digunakan dan disebarluaskan untuk keperluan belajar.
