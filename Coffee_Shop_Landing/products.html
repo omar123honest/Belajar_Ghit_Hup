@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk - BrewBeans Kopi Premium</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-wrapper">
+            <div class="logo">
+                <i class="fas fa-coffee"></i>
+                <span>BrewBeans</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="products.html">Produk</a></li>
+                <li><a href="about.html">Tentang</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+                <li><a href="#" class="btn-cart"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Koleksi Kopi Premium Kami</h1>
+            <p>Pilih dari berbagai varian kopi terbaik dari seluruh nusantara</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+        <div class="container">
+            <div class="filter-section">
+                <button class="filter-btn active" onclick="filterProducts('semua')">Semua</button>
+                <button class="filter-btn" onclick="filterProducts('arabika')">Arabika</button>
+                <button class="filter-btn" onclick="filterProducts('robusta')">Robusta</button>
+                <button class="filter-btn" onclick="filterProducts('specialty')">Specialty</button>
+            </div>
+
+            <div class="products-grid">
+                <!-- Product Card 1 -->
+                <div class="product-card" data-category="arabika">
+                    <div class="product-image">
+                        <div class="image-placeholder arabica"></div>
+                        <span class="badge">Terlaris</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Arabica Sumatra Premium</h3>
+                        <p class="origin">Asal: Sumatera Utara</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(125)</span>
+                        </div>
+                        <p class="description">Kopi Arabika dengan cita rasa kaya, body sedang, dan aroma yang khas. Diproduksi dengan metode tradisional dari petani lokal terpercaya.</p>
+                        <div class="price-section">
+                            <span class="price">Rp 89.000</span>
+                            <span class="weight">/250gr</span>
+                        </div>
+                        <button class="btn btn-secondary" onclick="addToCart('Arabica Sumatra Premium', 89000)">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="product-card" data-category="robusta">
+                    <div class="product-image">
+                        <div class="image-placeholder java"></div>
+                        <span class="badge">Promo</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Java Robusta Medium Roast</h3>
+                        <p class="origin">Asal: Jawa Timur</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(98)</span>
+                        </div>
+                        <p class="description">Robusta berkualitas tinggi dengan body kuat dan notes cokelat yang nikmat. Cocok untuk kopi kental dan espresso.</p>
+                        <div class="price-section">
+                            <span class="price">Rp 65.000</span>
+                            <span class="weight">/250gr</span>
+                        </div>
+                        <button class="btn btn-secondary" onclick="addToCart('Java Robusta Medium Roast', 65000)">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="product-card" data-category="arabika">
+                    <div class="product-image">
+                        <div class="image-placeholder bali"></div>
+                        <span class="badge">Baru</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Bali Arabica Dark Roast</h3>
+                        <p class="origin">Asal: Bali</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(76)</span>
+                        </div>
+                        <p class="description">Kopi dengan roasting gelap, citarasa smoky, dan finish yang panjang. Sempurna untuk pecinta kopi yang lebih bold.</p>
+                        <div class="price-section">
+                            <span class="price">Rp 95.000</span>
+                            <span class="weight">/250gr</span>
+                        </div>
+                        <button class="btn btn-secondary" onclick="addToCart('Bali Arabica Dark Roast', 95000)">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="product-card" data-category="specialty">
+                    <div class="product-image">
+                        <div class="image-placeholder sulawesi"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Sulawesi Toraja Specialty</h3>
+                        <p class="origin">Asal: Sulawesi Selatan</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(112)</span>
+                        </div>
+                        <p class="description">Kopi specialty dengan karakter unik, body full, dan notes herbal yang kompleks. Setiap batch dipilih secara khusus.</p>
+                        <div class="price-section">
+                            <span class="price">Rp 125.000</span>
+                            <span class="weight">/250gr</span>
+                        </div>
+                        <button class="btn btn-secondary" onclick="addToCart('Sulawesi Toraja Specialty', 125000)">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 5 -->
+                <div class="product-card" data-category="arabika">
+                    <div class="product-image">
+                        <div class="image-placeholder arabica"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Aceh Gayo Single Origin</h3>
+                        <p class="origin">Asal: Aceh</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(89)</span>
+                        </div>
+                        <p class="description">Kopi Arabika premium dari dataran tinggi Gayo dengan rasa smooth dan balance yang sempurna.</p>
+                        <div class="price-section">
+                            <span class="price">Rp 105.000</span>
+                            <span class="weight">/250gr</span>
+                        </div>
+                        <button class="btn btn-secondary" onclick="addToCart('Aceh Gayo Single Origin', 105000)">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+
+                <!-- Product Card 6 -->
+                <div class="product-card" data-category="specialty">
+                    <div class="product-image">
+                        <div class="image-placeholder sulawesi"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Papua Wamena Natural Process</h3>
+                        <p class="origin">Asal: Papua</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(67)</span>
+                        </div>
+                        <p class="description">Kopi specialty dengan proses natural, menghasilkan cita rasa unik dan berbuah-buahan.</p>
+                        <div class="price-section">
+                            <span class="price">Rp 135.000</span>
+                            <span class="weight">/250gr</span>
+                        </div>
+                        <button class="btn btn-secondary" onclick="addToCart('Papua Wamena Natural Process', 135000)">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>BrewBeans</h3>
+                    <p>Menyediakan kopi premium berkualitas tinggi dari seluruh nusantara.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Produk</h4>
+                    <ul>
+                        <li><a href="products.html">Kopi Arabika</a></li>
+                        <li><a href="products.html">Kopi Robusta</a></li>
+                        <li><a href="products.html">Specialty Coffee</a></li>
+                        <li><a href="products.html">Merchandise</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Perusahaan</h4>
+                    <ul>
+                        <li><a href="about.html">Tentang Kami</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Karir</a></li>
+                        <li><a href="contact.html">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Bantuan</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Kebijakan Privasi</a></li>
+                        <li><a href="#">Syarat & Ketentuan</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 BrewBeans. Semua hak dilindungi. Dibuat dengan <i class="fas fa-heart"></i> untuk pecinta kopi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
